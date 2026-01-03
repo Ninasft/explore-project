@@ -9,7 +9,7 @@ header{
 header.sticky{
     position: sticky;
     top: 0;
-    background-color: var(--color-gray-200);
+    background-color: var(--color-gray-100);
 }
 
 nav ul {
@@ -107,6 +107,8 @@ section{
 }
 
 footer.page-footer{
+    margin-top: var(--size-xl);
+    border-top: 1px solid var(--color-gray-500);
     padding: 24px;
     text-align: center;
 }
@@ -136,7 +138,7 @@ section.hero{
 
 .breadcrumb {
     padding: 8px 16px;
-    background-color: var(--color-gray-100);
+    background-color: var(--color-gray-200);
   }
   
   .breadcrumb-item {
@@ -154,5 +156,5 @@ section.hero{
   }
   
   .breadcrumb-item.active {
-    color: #6c757d;
+    color:var(--color-gray-500);
   }
