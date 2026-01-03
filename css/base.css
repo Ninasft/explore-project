@@ -1,0 +1,99 @@
+/* =========================
+   Design Tokens
+========================= */
+:root{
+    /* Colors */
+    --color-amber-100:#fef3c7;
+    --color-amber-200:#fde68a;
+    --color-amber-500:#f59e0b;
+    --color-amber-700:#b45309;
+    --color-green-200:#bbf7d0;
+    --color-blue-200:#bfdbfe;
+  
+    --color-gray-100:#f3f4f6;
+    --color-gray-200:#e4e4e7;
+    --color-gray-500:#6b7280;
+    --color-gray-700:#374151;
+    --color-gray-950:#030712;
+  
+    --color-black:#000;
+    --color-white:#fff;
+  
+    /* Spacing / Size */
+    --size-xxs:.5rem;
+    --size-xs:.75rem;
+    --size-sm:.875rem;
+    --size-base:1rem;
+    --size-lg:1.125rem;
+    --size-xl:1.25rem;
+    --size-2xl:1.5rem;
+    --size-3xl:1.875rem;
+    --size-4xl:2.25rem;
+    --size-5xl:3rem;
+    --size-6xl:3.75rem;
+    --size-7xl:4.5rem;
+    --size-8xl:6rem;
+    --size-9xl:8rem;
+    --size-10xl:10rem;
+  }
+  
+  /* =========================
+     Reset & Global Rules
+  ========================= */
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* =========================
+     Typography
+  ========================= */
+  body {
+    font-family:
+      "Segoe UI",
+      -apple-system,
+      "Roboto",
+      "Helvetica Neue",
+      Arial,
+      sans-serif;
+    font-weight: 400;
+    color: var(--color-gray-950);
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-xl);
+    border-bottom: .5px solid var(--color-gray-200);
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  section {
+    margin-top: var(--size-base);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: var(--size-xl);
+    list-style: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  

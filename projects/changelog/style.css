@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-xl);
+    border-bottom: .5px solid var(--color-gray-200);
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  section {
+    margin-top: var(--size-base);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: var(--size-xl);
+    list-style: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
