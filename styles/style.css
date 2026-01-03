@@ -125,6 +125,10 @@ a{
 }
 
 .card__tech{
+    display: flex;
+    gap: var(--size-xxs);
+}
+.card__tech-item{
     background-color: var(--color-gray-100);
     border: 1px solid var(--color-gray-200);
     border-radius: 6px;
@@ -155,5 +159,3 @@ a{
 .card__author span{
     font-style: italic;
 }
-
-
