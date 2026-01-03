@@ -1,0 +1,158 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-xl);
+    border-bottom: .5px solid var(--color-gray-200);
+}
+
+header.sticky{
+    position: sticky;
+    top: 0;
+    background-color: var(--color-gray-200);
+}
+
+nav ul {
+    display: flex;
+    gap: var(--size-xl);
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    padding: var(--size-xs);
+
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: var(--size-7xl);
+}
+
+.projects {
+    border: 1px solid;
+    padding: 16px;
+}
+
+.projects ul{
+    list-style: none;
+    list-style-position: inside;
+}
+
+.projects li{
+   border-bottom: 1px solid;
+}
+
+.education ul{
+    list-style: circle;
+    list-style-position: inside;
+}
+
+.work-experience{
+    padding: 16px;
+    border: 1px solid;
+}
+.work-experience article{
+    border-bottom: 1px solid;
+    padding: 16px;
+}
+
+.education{
+    border: 1px solid;
+    padding: 16px;
+}
+
+section{
+    margin-top: 16px;
+}
+
+.review{
+    padding: 16px;
+    border: 1px solid;
+    margin: var(--size-xxs);
+}
+
+.review-list{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.review-list footer p{
+    color: var(--color-gray-500);
+    font-weight: 500;
+}
+
+.review article{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid var(--color-gray-700);
+    border-radius: 20px;
+}
+
+footer.page-footer{
+    padding: 24px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: rgb(237, 204, 204);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--size-2xl);
+}
+
+section.hero{
+    margin-top: 64px;
+}
+
+.breadcrumb {
+    padding: 8px 16px;
+    background-color: var(--color-gray-100);
+  }
+  
+  .breadcrumb-item {
+    display: inline;
+  }
+  
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "›";
+    padding: 0 8px;
+  }
+  
+  .breadcrumb-item a {
+    color: var(--color-amber-700);
+    text-decoration: none;
+  }
+  
+  .breadcrumb-item.active {
+    color: #6c757d;
+  }
