@@ -1,4 +1,4 @@
-header{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,7 +6,7 @@ header{
     border-bottom: .5px solid var(--color-gray-200);
 }
 
-header.sticky{
+.header.sticky{
     position: sticky;
     top: 0;
     background-color: var(--color-gray-100);
@@ -183,6 +183,5 @@ section.hero{
         display: flex;
         flex-direction: column;
     }
-
 }
 
