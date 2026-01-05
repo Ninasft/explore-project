@@ -1,0 +1,143 @@
+.testimonial-cards{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--size-3xl);
+    flex-wrap: wrap;
+}
+.card__testimoni{
+    display: flex;
+    gap: var(--size-xl);
+    align-items: center;
+    align-content: center;
+}
+.card-tooltip{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-xl);
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: wrap;
+    border: 1px solid var(--color-gray-200);
+    padding: var(--size-xs);
+    border-radius: var(--size-sm);
+}
+
+.card-testi{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-3xl);
+    border: 1px solid var(--color-gray-200);
+    padding: var(--size-xs);
+    border-radius: var(--size-sm);
+    height: fit-content;
+}
+
+.card-testi blockquote{
+    display: inline-block;
+    width: 300px;
+}
+
+.card__photo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+.card__introduction{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    margin: var(--size-8xl) var(--size-xl);
+}
+
+.card-tooltip::before{
+    content: "Shenox di muka aku nampol banget. Flek hitam menahun aku ada perubahan dan alhamdulillah ini udah tube ke-4 aku. Recommended banget!";
+    position: absolute;
+    left: 0;
+    top: -144px;
+    color: var(--color-white);
+    border-radius: var(--size-xs);
+    background-color: var(--color-gray-700);
+    padding: var(--size-xs);
+    font-size: var(--size-base);
+}
+
+.card-tooltip::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: -16px;
+  
+    width: 0;
+    height: 0;
+  
+    border-left: var(--size-xs) solid transparent;
+    border-right: var(--size-xs) solid transparent;
+    border-top: var(--size-xs) solid var(--color-gray-700);
+  }
+
+  .card-tooltip::before,
+  .card-tooltip::after {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(4px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+  }
+
+.card-tooltip:hover::before,
+.card-tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.card-name{
+    font-size: var(--size-base);
+}
+.card-job{
+    font-size: var(--size-sm);
+    color: var(--color-gray-700);
+}
+.review-star{
+    display: flex;
+}
+
+.card-img-testi{
+    display: flex;
+    gap: var(--size-xxs);
+}
+
+.review-star{
+    width: var(--size-9xl);
+    padding: var(--size-sm) 0;
+    color: var(--color-amber-700);
+}
+
+.card-full-testi{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: var(--size-2xl);
+    border: 1px solid var(--color-gray-200);
+    padding: var(--size-xs);
+    border-radius: var(--size-sm);
+    height: fit-content;
+}
+
+.card-full-testi blockquote{
+    display: inline-block;
+    max-width: 300px;
+}
+
+.card-img-testi .card__photo img{
+    width: 300px;
+    height: 252px;
+    border-radius: var(--size-xs);
+}

@@ -188,12 +188,12 @@ header.sticky {
 }
 
 .button{
-  margin-top: var(--size-5xl);
+  margin-top: var(--size-3xl);
   border: none;
   border-radius: var(--size-xxs);
-  font-size: var(--size-base);
+  font-size: var(--size-sm);
   color: var(--color-white);
-  padding: var(--size-sm);
+  padding: var(--size-xs);
   background-color: var(--color-gray-700);
   cursor: pointer;
 }
