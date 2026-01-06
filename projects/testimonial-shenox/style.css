@@ -1,7 +1,8 @@
 .testimonial-cards{
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: center;
+    justify-content: center;
     gap: var(--size-3xl);
     flex-wrap: wrap;
 }
@@ -16,7 +17,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    gap: var(--size-xl);
+    gap: var(--size-base);
     width: fit-content;
     height: fit-content;
     flex-wrap: wrap;
@@ -28,7 +29,7 @@
 .card-testi{
     display: flex;
     flex-direction: column;
-    gap: var(--size-3xl);
+    gap: var(--size-base);
     border: 1px solid var(--color-gray-200);
     padding: var(--size-xs);
     border-radius: var(--size-sm);
@@ -50,10 +51,11 @@
 .card__introduction{
     display: flex;
     flex-direction: column;
+    gap: var(--size-xxs);
 }
 
 section{
-    margin: var(--size-8xl) var(--size-xl);
+    margin: var(--size-3xl);
 }
 
 .card-tooltip::before{
@@ -111,12 +113,13 @@ section{
 
 .card-img-testi{
     display: flex;
-    gap: var(--size-xxs);
+    justify-content: center;
+    gap: var(--size-sm);
+    flex-wrap: wrap;
 }
 
 .review-star{
     width: var(--size-9xl);
-    padding: var(--size-sm) 0;
     color: var(--color-amber-700);
 }
 
@@ -124,7 +127,7 @@ section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: var(--size-2xl);
+    gap: var(--size-base);
     border: 1px solid var(--color-gray-200);
     padding: var(--size-xs);
     border-radius: var(--size-sm);
@@ -138,6 +141,65 @@ section{
 
 .card-img-testi .card__photo img{
     width: 300px;
-    height: 252px;
+    height: 224px;
     border-radius: var(--size-xs);
+}
+.card-carousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: var(--size-base);
+}
+
+.carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: var(--size-xl);
+    border: 1px solid var(--color-gray-200);
+    padding: var(--size-xs);
+    border-radius: var(--size-sm);
+}
+
+.carousel img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.carousel svg{
+    width: 30px;
+    height: 30px;
+}
+
+
+.carousel-backnext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-xl);
+}
+
+.carousel-backnext img {
+    opacity: 0.5; /* Default: redup */
+    transition: opacity 0.3s ease;
+  }
+  .carousel-backnext img.active{
+    opacity: 1; /* Active: terang penuh */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  
+footer.page-footer{
+    margin-top: var(--size-xl);
+    border-top: 1px solid var(--color-gray-500);
+    padding: 24px;
+    text-align: center;
 }

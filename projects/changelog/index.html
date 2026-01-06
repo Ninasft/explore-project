@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="../../css/components.css" />
     <link rel="stylesheet" href="style.css" />
 
+    <script src="/js/script.js"></script>
+
     <title>Changelog Component</title>
   </head>
   <body>
@@ -77,7 +79,7 @@
       </section>
 
       <section class="stepper-list">
-        <ol>
+        <ol class="eventList">
           <li class="event">
             <time datetime="2025-09-03">September 3, 2025</time>
 
@@ -100,12 +102,35 @@
             <span> Announcing Projects on Frontend Roadmap </span>
           </li>
           <li class="event">
+            <time datetime="2025-09-03">September 3, 2025</time>
+            <span> Announcing Projects on Frontend Roadmap </span>
+          </li>
+
+          <li class="event extra hidden">
+            <time datetime="2025-09-03">September 3, 2025</time>
+            <span> Announcing Projects on Frontend Roadmap </span>
+          </li>
+          <li class="event extra hidden">
+            <time datetime="2025-09-03">September 3, 2025</time>
+            <span> Announcing Projects on Frontend Roadmap </span>
+          </li>
+          <li class="event extra hidden">
+            <time datetime="2025-09-03">September 3, 2025</time>
+            <span> Announcing Projects on Frontend Roadmap </span>
+          </li>
+          <li class="event extra hidden">
+            <time datetime="2025-09-03">September 3, 2025</time>
+            <span> Announcing Projects on Frontend Roadmap </span>
+          </li>
+          <li class="event extra hidden">
             <time datetime="2025-09-03">September 3, 2025</time>
             <span> Announcing Projects on Frontend Roadmap </span>
           </li>
         </ol>
 
-        <button class="button">Visit Complete Changelog</button>
+        <button id="viewAllBtn" class="button" onclick="toggleEvents()">
+          Visit Complete Changelog
+        </button>
       </section>
     </main>
     <footer class="page-footer">
