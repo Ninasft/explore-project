@@ -41,6 +41,10 @@
     width: 300px;
 }
 
+.carousel blockquote{
+    display: inline-block;
+    width: 300px;
+}
 .card__photo img {
     width: 60px;
     height: 60px;
@@ -107,10 +111,6 @@ section{
     font-size: var(--size-sm);
     color: var(--color-gray-700);
 }
-.review-star{
-    display: flex;
-}
-
 .card-img-testi{
     display: flex;
     justify-content: center;
@@ -119,6 +119,7 @@ section{
 }
 
 .review-star{
+    display: flex;
     width: var(--size-9xl);
     color: var(--color-amber-700);
 }
@@ -144,10 +145,12 @@ section{
     height: 224px;
     border-radius: var(--size-xs);
 }
-.card-carousel{
+
+section.card-carousel{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: var(--size-xxs);
     padding: var(--size-base);
 }
 
@@ -158,6 +161,8 @@ section{
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
     gap: var(--size-xl);
     border: 1px solid var(--color-gray-200);
     padding: var(--size-xs);

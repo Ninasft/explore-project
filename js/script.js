@@ -1,21 +1,17 @@
 function toggleEvents() {
-    const hiddenEvents = document.querySelectorAll('.event.hidden');
-    const allExtraEvents = document.querySelectorAll('.event.extra'); // semua event tambahan
-    const btn = document.getElementById('viewAllBtn');
-    
-    if (btn.textContent === 'Visit Complete Changelog') {
-      // Buka semua
-      allExtraEvents.forEach(event => {
-        event.classList.remove('hidden');
-      });
-      btn.textContent = 'Show Less';
-    } else {
-      // Tutup semua
-      allExtraEvents.forEach(event => {
-        event.classList.add('hidden');
-      });
-      btn.textContent = 'Visit Complete Changelog';
-    }
-  }
-
+  const allExtraEvents = document.querySelectorAll('.event.extra');
+  const btn = document.getElementById('viewAllBtn');
   
+  // Pakai .trim() untuk hapus spasi
+  if (btn.textContent.trim() === 'Visit Complete Changelog') {
+    allExtraEvents.forEach(event => {
+      event.classList.remove('hidden');
+    });
+    btn.textContent = 'Show Less';
+  } else {
+    allExtraEvents.forEach(event => {
+      event.classList.add('hidden');
+    });
+    btn.textContent = 'Visit Complete Changelog';
+  }
+}
