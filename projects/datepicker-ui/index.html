@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Siti Fatimah Tuma'ninah" />
+    <meta
+      name="description"
+      content="Nina.space is a personal website showcasing work, ideas, and experiments in building digital products."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Ninaspace | Frontend Works" />
+    <meta
+      property="og:description"
+      content="Product-focused portfolio showcasing projects and experience."
+    />
+    <!-- Will add in production-->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ninaspace | Frontend Works" />
+    <meta
+      name="twitter:description"
+      content="Product-focused portfolio showcasing projects and experience."
+    />
+    <meta property="og:site_name" content="Ninaspace | Frontend Works" />
+    <!-- Will add in production -->
+    <meta name="twitter:name" content="" />
+    <link rel="canonical" href="" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../css/base.css" />
+    <link rel="stylesheet" href="../../css/components.css" />
+
+    <title>Datepicker UI</title>
+  </head>
+  <body>
+    <!-- Site Header with Navigation -->
+    <header class="header sticky">
+      <div class="logo">
+        <div class="logo-icon">N</div>
+        <span>Nina</span>
+      </div>
+      <nav aria-label="Main Navigation" class="nav-link">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">Article</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-bars">
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Datepicker UI
+        </li>
+      </ol>
+    </nav>
+    <main>
+      <section>
+        <article class="calendar">
+          <div class="calendar-head">
+            <input
+              type="date"
+              aria-describedby="date calendar"
+              class="date-input"
+            />
+          </div>
+          <div class="month-picker">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+              <path
+                d="M201.4 297.4C188.9 309.9 188.9 330.2 201.4 342.7L361.4 502.7C373.9 515.2 394.2 515.2 406.7 502.7C419.2 490.2 419.2 469.9 406.7 457.4L269.3 320L406.6 182.6C419.1 170.1 419.1 149.8 406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3L201.3 297.3z"
+              />
+            </svg>
+            <span> December 2022 </span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+              <path
+                d="M439.1 297.4C451.6 309.9 451.6 330.2 439.1 342.7L279.1 502.7C266.6 515.2 246.3 515.2 233.8 502.7C221.3 490.2 221.3 469.9 233.8 457.4L371.2 320L233.9 182.6C221.4 170.1 221.4 149.8 233.9 137.3C246.4 124.8 266.7 124.8 279.2 137.3L439.2 297.3z"
+              />
+            </svg>
+          </div>
+          <div class="date-picker">
+            <table class="date-calendar" aria-label="Calendar">
+              <!-- HEADER HARI -->
+              <thead>
+                <tr>
+                  <th scope="col">S</th>
+                  <th scope="col">M</th>
+                  <th scope="col">T</th>
+                  <th scope="col">W</th>
+                  <th scope="col">T</th>
+                  <th scope="col">F</th>
+                  <th scope="col">S</th>
+                </tr>
+              </thead>
+
+              <!-- ISI TANGGAL -->
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+
+                <tr>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+    <!-- Footer  -->
+    <footer class="page-footer">
+      <p><small>&copy; 2025 Nina. All rights reserved.</small></p>
+    </footer>
+  </body>
+</html>

@@ -201,3 +201,10 @@ header.sticky {
 .button:hover{
   background-color: var(--color-gray-950);
 }
+
+footer.page-footer{
+  margin-top: var(--size-xl);
+  border-top: 1px solid var(--color-gray-500);
+  padding: 24px;
+  text-align: center;
+}

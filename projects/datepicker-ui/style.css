@@ -1,0 +1,50 @@
+.date-input{
+    font-size: var(--size-xl);
+}
+
+.month-picker svg{
+    width: var(--size-xl);
+    height: var(--size-xl);
+    cursor: pointer;
+}
+
+.month-picker{
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    gap: var(--size-6xl);
+    padding: var(--size-xl);
+    border: 1px solid;
+}
+
+.date-calendar{
+    border: 1px solid;
+}
+
+input[type="date"] {
+    border: none;
+    outline: none;
+    font-size: var(--size-2xl);
+}
+
+input[type="date"]:focus {
+    outline: none;
+    box-shadow: 0 2px 0 currentColor;
+}
+
+section{
+    padding: var(--size-xl);
+}
+
+th, td{
+    padding: var(--size-xs);
+}
+
+.calendar{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-xs);
+}
