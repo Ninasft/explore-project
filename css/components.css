@@ -187,7 +187,7 @@ header.sticky {
   color: var(--color-gray-500);
 }
 
-.button{
+.button, button{
   margin-top: var(--size-3xl);
   border: none;
   border-radius: var(--size-xxs);
@@ -198,7 +198,7 @@ header.sticky {
   cursor: pointer;
 }
 
-.button:hover{
+.button:hover, button:hover{
   background-color: var(--color-gray-950);
 }
 
