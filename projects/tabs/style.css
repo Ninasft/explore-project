@@ -1,0 +1,33 @@
+li{
+    cursor: pointer;
+}
+
+.tabs{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+}
+
+.content-tab{
+    margin-top: var(--size-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: var(--size-sm);
+}
+.content-tab img{
+    width: 400px;
+}
+
+.tab-active{
+    border-bottom: 1px solid black ;
+}
+
+.ingredient-list{
+    display: flex;
+    flex-direction: column;
+}
