@@ -83,79 +83,36 @@
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
-                Accessible Form UI
+                Image Grid Layout
               </li>
             </ol>
-
     <main>
-      <section class="hero">
-        <h1>Accessible Form UI</h1>
-        <p>
-          This project is to practice about create a form UI using only HTML and CSS.
-        </p>
-      </section>
-        <article class="card-form">
-            <form action="#" method="post" autocomplete="on">
-
-                <div class="form-group">
-                    <label for="nama">Nama Lengkap</label>
-                    <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required oninvalid="this.setCustomValidity('Isi nama lengkap Anda')" oninput="this.setCustomValidity('')">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="dob">Tanggal Lahir</label>
-                    <input type="date" id="dob" name="dob" autocomplete="bday" required>
-                </div>
-
-                <div class="form-group">
-                    <fieldset aria-required="true">
-                        <legend>
-                            Jenis Kelamin
-                        </legend>
-    
-                        <input type="radio" id="male" name="gender" value="laki-laki"  required>
-                        <label for="male">Laki-Laki</label>
-    
-                        <input type="radio" id="female" name="gender" value="perempuan">
-                        <label for="female">Perempuan</label>
-                    </fieldset>
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Isi Password</label>
-                    <input type="password" id="password" name="password" minlength="8" placeholder="xxxxxxxx" autocomplete="new-password" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="confirm-password">Konfirmasi Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" placeholder="xxxxxxxx" minlength="8" autocomplete="new-password" required>
-                </div>
-
-                <div class="form-group">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-            <aside class="profile-progress" aria-labelledby="profile-progress-title">
-                <div class="progress-dot" aria-hidden="true">
-                    <span class="progress-value">65%</span>
-                  </div>
-              
-                <h3 id="profile-progress-title">Profile Completeness</h3>
-              
-                <ul class="progress-list">
-                  <li class="done">Create Account</li>
-                  <li class="done">Update Roadmap Progress</li>
-                  <li class="done">Setup Public Profile</li>
-                  <li>Complete your first project</li>
-                  <li>Invite your friends</li>
-                </ul>
-              </aside>
-        </article>
+        <section class="hero">
+            <h1>Image Grid Layout</h1>
+            <p>
+              This project is to practice about create a grid layout using HTML and CSS.
+            </p>
+          </section>
+       <div class="grid-container"> 
+            <div class="item item-1">
+                <img src="/assets/img/Profil_lengkap_Sana_TWICE_11zon_1_311ba10e3e.jpg" alt="sana">
+            </div>
+            <div class="item item-2">
+                <img src="/assets/img/Profil_lengkap_Sana_TWICE_11zon_1_311ba10e3e.jpg" alt="sana">
+            </div>
+            <div class="item item-3">
+                <img src="/assets/img/Profil_lengkap_Sana_TWICE_11zon_1_311ba10e3e.jpg" alt="sana">
+            </div>
+            <div class="item item-4">
+                <img src="/assets/img/Profil_lengkap_Sana_TWICE_11zon_1_311ba10e3e.jpg" alt="sana">
+            </div>
+            <div class="item item-5">
+                <img src="/assets/img/Profil_lengkap_Sana_TWICE_11zon_1_311ba10e3e.jpg" alt="sana">
+            </div>
+            <div class="item item-6">
+                <img src="/assets/img/Profil_lengkap_Sana_TWICE_11zon_1_311ba10e3e.jpg" alt="sana">
+            </div>
+       </div>
     </main>
     <footer class="page-footer">
       <p><small>&copy; 2025 Nina. All rights reserved.</small></p>
