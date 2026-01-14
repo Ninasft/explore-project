@@ -64,3 +64,30 @@ tabs.forEach(tab => {
     content.innerHTML = tabContents[key];
   });
 });
+
+
+const decBtn = document.getElementById("decBtn");
+const resetBtn = document.getElementById("resetBtn");
+const incBtn = document.getElementById("incBtn");
+const count = document.getElementById("countLabel");
+let counter = 0;
+
+decBtn.onclick=function(){
+  counter--;
+  count.textContent=counter;
+}
+
+incBtn.onclick=function(){
+  counter++;
+  count.textContent=counter;
+}
+
+resetBtn.onclick=function(){
+  counter=0;
+  count.textContent=counter;
+}
+
+
+
+
+

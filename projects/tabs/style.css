@@ -18,6 +18,7 @@ li{
     align-items: center;
     align-content: center;
     gap: var(--size-sm);
+    min-height: 400px;
 }
 .content-tab img{
     width: 400px;
