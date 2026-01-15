@@ -19,7 +19,6 @@
   .tags{
     display: flex;
     gap: var(--size-xxs);
-    margin-top: var(--size-xs);
   }
   
   .tag{

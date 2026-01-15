@@ -1,0 +1,39 @@
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: fixed;
+    bottom: 0;
+    background: hsla(244, 31%, 30%, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: rgb(220, 75, 75);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }

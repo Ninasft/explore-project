@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Video</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="audio">
+      <audio controls autoplay id="myAudio">
+        <source src="/assets/audio/beat.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <video aria-describedby="valorant" autoplay muted loop id="myVideo">
+      <source src="/assets/video/valorant.mp4" type="video/mp4" />
+      <track
+        kind="captions"
+        src="video-id.vtt"
+        srclang="id"
+        label="Bahasa Indonesia"
+        default
+      />
+    </video>
+
+    <div class="content">
+      <h1>My First Ace in 2026</h1>
+      <p>using iso-chan...</p>
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+  </body>
+</html>
